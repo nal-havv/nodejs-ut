@@ -19,25 +19,39 @@ export class OrderTypeBHandler implements OrderHandler {
     async process(order: Order): Promise<void> {
         try {
             const apiResponse = await this.apiClient.callAPI(order.id);
-
-            if (apiResponse.status === 'success') {
-                if (apiResponse.data.amount >= 50 && order.amount < 100) {
-                    order.status = 'processed';
-                } else if (apiResponse.data.amount < 50 || order.flag) {
-                    order.status = 'pending';
-                } else {
-                    order.status = 'error';
-                }
-            } else {
-                order.status = 'api_error';
-            }
+            order.status = this.determineOrderStatus(apiResponse.status, apiResponse.data?.amount, order);
         } catch (error) {
-            if (error instanceof APIException) {
-                order.status = 'api_failure';
-            }
+            order.status = this.handleAPIError(error);
         }
 
         order.priority = this.priorityCalculator.calculate(order.amount);
         await this.dbService.updateOrderStatus(order.id, order.status, order.priority);
+    }
+
+    private determineOrderStatus(apiStatus: string, apiAmount: number | undefined, order: Order): string {
+        if (apiStatus !== 'success') {
+            return 'api_error';
+        }
+
+        if (apiAmount === undefined) {
+            return 'error';
+        }
+
+        if (apiAmount >= 50 && order.amount < 100) {
+            return 'processed';
+        }
+
+        if (apiAmount < 50 || order.flag) {
+            return 'pending';
+        }
+
+        return 'error';
+    }
+
+    private handleAPIError(error: unknown): string {
+        if (error instanceof APIException) {
+            return 'api_failure';
+        }
+        return 'unknown_error';
     }
 }
