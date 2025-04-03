@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1743702734800" clover="3.2.0">
+  <project timestamp="1743702734800" name="All files">
+    <metrics statements="80" coveredstatements="80" conditionals="24" coveredconditionals="23" methods="16" coveredmethods="16" elements="120" coveredelements="119" complexity="0" loc="80" ncloc="80" packages="1" files="9" classes="9"/>
+    <file name="APIException.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/APIException.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="2" type="stmt"/>
+    </file>
+    <file name="FileService.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/FileService.ts">
+      <metrics statements="7" coveredstatements="7" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+    </file>
+    <file name="Order.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/Order.ts">
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="1" count="4" type="stmt"/>
+      <line num="11" count="39" type="stmt"/>
+      <line num="12" count="39" type="stmt"/>
+      <line num="13" count="39" type="stmt"/>
+      <line num="14" count="39" type="stmt"/>
+      <line num="15" count="39" type="stmt"/>
+      <line num="16" count="39" type="stmt"/>
+      <line num="17" count="39" type="stmt"/>
+    </file>
+    <file name="OrderHandlerFactory.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/OrderHandlerFactory.ts">
+      <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="19" count="5" type="stmt"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="28" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+    </file>
+    <file name="OrderProcessingService.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/OrderProcessingService.ts">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="8" count="8" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="15" count="6" type="stmt"/>
+      <line num="16" count="9" type="stmt"/>
+      <line num="17" count="8" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="22" count="4" type="stmt"/>
+    </file>
+    <file name="OrderTypeAHandler.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/OrderTypeAHandler.ts">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="14" count="8" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="19" count="7" type="stmt"/>
+      <line num="20" count="7" type="stmt"/>
+      <line num="21" count="5" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="26" count="7" type="stmt"/>
+      <line num="27" count="7" type="stmt"/>
+    </file>
+    <file name="OrderTypeBHandler.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/OrderTypeBHandler.ts">
+      <metrics statements="23" coveredstatements="23" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="14" count="17" type="stmt"/>
+      <line num="15" count="17" type="stmt"/>
+      <line num="16" count="17" type="stmt"/>
+      <line num="20" count="16" type="stmt"/>
+      <line num="21" count="16" type="stmt"/>
+      <line num="22" count="14" type="cond" truecount="3" falsecount="1"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="27" count="16" type="stmt"/>
+      <line num="28" count="16" type="stmt"/>
+      <line num="32" count="14" type="cond" truecount="1" falsecount="0"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="36" count="12" type="cond" truecount="1" falsecount="0"/>
+      <line num="37" count="2" type="stmt"/>
+      <line num="40" count="10" type="cond" truecount="3" falsecount="0"/>
+      <line num="41" count="3" type="stmt"/>
+      <line num="44" count="7" type="cond" truecount="3" falsecount="0"/>
+      <line num="45" count="5" type="stmt"/>
+      <line num="48" count="2" type="stmt"/>
+      <line num="52" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+    </file>
+    <file name="OrderTypeCHandler.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/OrderTypeCHandler.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="16" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="7" type="stmt"/>
+      <line num="18" count="6" type="stmt"/>
+    </file>
+    <file name="PriorityCalculator.ts" path="/Users/nals_macbook_121/Desktop/nodejs-ut/src/PriorityCalculator.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="5" type="cond" truecount="2" falsecount="0"/>
+    </file>
+  </project>
+</coverage>
